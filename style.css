@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jumbotron {
   padding-top: 6rem;
   background-color: #e2edff;
@@ -127,3 +128,17 @@ body {
 .tech-card i {
   font-size: 3rem !important; /* Ukuran ikon lebih besar agar menonjol */
 }
+=======
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+>>>>>>> 2f8617b3e60c2a6cfe10087e731466f8d2445051
