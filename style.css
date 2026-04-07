@@ -1,0 +1,129 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* gemini */
+body {
+  background-color: #e2edff; /* Warna dasar yang lembut */
+}
+.jumbotron {
+  padding-top: 8rem; /* Memberi jarak agar tidak tertutup navbar fixed */
+  background-color: #e2edff;
+}
+.display-4 {
+  font-weight: 700;
+  color: #0d6efd; /* Warna biru primer */
+}
+.lead {
+  font-weight: 500;
+  color: #555;
+}
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 576px) {
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* Animasi halus untuk foto */
+.img-thumbnail {
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Pastikan gambar kartu memiliki tinggi yang sama dan tidak gepeng */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Efek hover pada kartu */
+.card {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  background-color: #fff !important;
+  border: 1px solid #0d6efd !important;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-all:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* footer */
+.transition-icon {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.transition-icon:hover {
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-beat {
+  display: inline-block;
+  animation: heartbeat 1.5s infinite;
+}
+
+.tech-card {
+  transition: transform 0.3s ease;
+}
+.tech-card:hover {
+  transform: translateY(-10px);
+}
+.tech-card i {
+  font-size: 3rem !important; /* Ukuran ikon lebih besar agar menonjol */
+}
