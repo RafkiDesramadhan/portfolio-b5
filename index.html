@@ -1,710 +1,1026 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio | Rafki Desramadhan</title>
+
+    <title>Rafki Desramadhan | Full Stack Web Developer</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
 
+    <!-- Devicon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body id="home">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top"
-    >
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Rafki Desramadhan</a>
+        <a class="navbar-brand" href="#home">
+          <span class="brand-dot"></span>
+          Rafki<span>.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <a class="nav-link active" href="#home"> Home </a>
+
+            <a class="nav-link" href="#tech-stack"> Skills </a>
+
+            <a class="nav-link" href="#about"> About </a>
+
+            <a class="nav-link" href="#projects"> Projects </a>
+
+            <a class="nav-link contact-nav" href="#contact"> Contact </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="jumbotron text-center">
-      <img
-        src="img/profile.png"
-        alt="Rafki Desramadhan"
-        class="rounded-circle img-thumbnail shadow-sm profile-img"
-      />
-      <h1 class="display-4 mt-3">Rafki Desramadhan</h1>
+    <!-- =========================
+         HERO
+    ========================== -->
+    <header class="hero-section">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
 
-      <p class="lead">
-        Full Stack Web Developer |
-        <span class="text-primary fw-bold">Node JS & React Enthusiast</span>
-      </p>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <!-- Hero Text -->
+          <div class="col-lg-7 order-2 order-lg-1">
+            <div class="hero-badge mb-4">
+              <span></span>
+              Available for opportunities
+            </div>
 
-      <hr
-        class="my-4 mx-auto"
-        style="width: 10%; border-top: 3px solid #0d6efd"
-      />
+            <p class="hero-small-title mb-2">HELLO, I'M</p>
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <p>
-              Membangun solusi digital yang efisien, skalabel, dan
-              user-friendly.
+            <h1 class="hero-title">
+              Rafki
+              <span>Desramadhan.</span>
+            </h1>
+
+            <h2 class="hero-role">Full Stack Web Developer</h2>
+
+            <p class="hero-description">
+              Saya membangun aplikasi web yang
+              <strong>efisien, scalable, dan user-friendly</strong>
+              dengan fokus pada JavaScript, React, Node.js, dan teknologi web
+              modern.
             </p>
-            <a
-              href="#projects"
-              class="btn btn-primary btn-lg rounded-pill shadow-sm"
-              >Lihat Project Saya</a
-            >
-          </div>
-        </div>
-      </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L48,74.7C96,117,192,203,288,213.3C384,224,480,160,576,122.7C672,85,768,75,864,96C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-
-    <section id="tech-stack" class="py-5" style="background-color: #f8f9fa">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">Tools & Technologies</h2>
-        <div class="row justify-content-center g-4">
-          <div class="col-4 col-md-2 tech-card">
-            <i class="devicon-html5-plain colored fs-1"></i>
-            <p class="mt-2 fw-medium">HTML5</p>
-          </div>
-
-          <div class="col-4 col-md-2 tech-card">
-            <i class="devicon-nodejs-plain colored fs-1"></i>
-            <p class="mt-2 fw-medium">Node JS</p>
-          </div>
-
-          <div class="col-4 col-md-2 tech-card">
-            <i class="devicon-react-original colored fs-1"></i>
-            <p class="mt-2 fw-medium">React JS</p>
-          </div>
-
-          <div class="col-4 col-md-2 tech-card">
-            <i class="devicon-bootstrap-plain colored fs-1"></i>
-            <p class="mt-2 fw-medium">Bootstrap</p>
-          </div>
-
-          <div class="col-4 col-md-2 tech-card">
-            <i class="devicon-mysql-plain colored fs-1"></i>
-            <p class="mt-2 fw-medium">MySQL</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" style="background-color: #fff">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2 class="fw-bold">About Me</h2>
-            <div
-              class="mx-auto"
-              style="
-                width: 50px;
-                height: 5px;
-                background-color: #0d6efd;
-                border-radius: 10px;
-              "
-            ></div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-6 mb-4" style="text-align: justify">
-            <p class="fs-5">
-              Halo! Saya <strong>Rafki Desramadhan</strong>, saya adalah lulusan
-              di <strong>Universitas Indraprasta PGRI</strong> Jakarta. Saya
-              memiliki gairah yang besar dalam pengembangan web dan selalu
-              bersemangat untuk menciptakan solusi digital yang inovatif.
-            </p>
-            <p>
-              Fokus utama saya adalah membangun aplikasi web yang responsif dan
-              efisien. Saya percaya bahwa kode yang bersih dan desain yang
-              intuitif adalah kunci dari pengalaman pengguna yang luar biasa.
-            </p>
-          </div>
-
-          <div class="col-md-5 offset-md-1">
-            <h5 class="fw-bold mb-3">Technical Skills</h5>
-            <div class="d-flex flex-wrap gap-2 mb-4">
-              <span class="badge bg-primary p-2">JavaScript</span>
-              <span class="badge bg-primary p-2">Java</span>
-              <span class="badge bg-info text-dark p-2">MySQL</span>
-              <span class="badge bg-info text-dark p-2">MongoDB</span>
-            </div>
-
-            <h5 class="fw-bold mb-3">Frameworks</h5>
-            <div class="d-flex flex-wrap gap-2 mb-4">
-              <span class="badge bg-primary p-2">React JS</span>
-              <span class="badge bg-primary p-2">Node JS</span>
-              <span class="badge bg-primary p-2">Express JS</span>
-            </div>
-
-            <h5 class="fw-bold mb-3">Design & Tools</h5>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="badge bg-secondary p-2">Figma</span>
-              <span class="badge bg-success p-2">Microsoft Office</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,160L48,170.7C96,181,192,203,288,186.7C384,171,480,117,576,128C672,139,768,213,864,229.3C960,245,1056,203,1152,165.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img src="img/projects/1.png" class="card-img-top" alt="ILKOOM" />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-dark">Bootstrap</span>
-                </div>
-                <h5 class="card-title">Web Statis ILKOOM</h5>
-                <p class="card-text small text-muted">
-                  Website statis dibuat menggunakan bootstrap 4. Web ini berisi
-                  artikel dan beberapa konten.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/2.png"
-                class="card-img-top"
-                alt="Bookself"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-warning text-dark">Javascript</span>
-                </div>
-                <h5 class="card-title">Bookshelf Apps</h5>
-                <p class="card-text small text-muted">
-                  Bookshelf Apps dibuat menggunakan Javascript Vanilla dengan
-                  penyimpanan local storage dan session storage. Website ini
-                  digunakan untuk menyimpan dan menghapus buku, serta
-                  memindahkan buku (arsip).
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/3.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-warning text-dark">Javascript</span>
-                </div>
-                <h5 class="card-title">Club Finder</h5>
-                <p class="card-text small text-muted">
-                  Club Finder menggunakan Javascript Vanilla. Website ini
-                  digunakan untuk melakukan pencarian club sepak bola
-                  internasional. Pengambilan data ini menggunakan RESTFUL API.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/4.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-dark">Bootstrap</span>
-                </div>
-                <h5 class="card-title">Makmur Barbershop</h5>
-                <p class="card-text small text-muted">
-                  Web Statis Makmur Barbaserhop menggunakan HTML CSS murni. Web
-                  ini berisi artikel, foto, video, serta suara.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/5.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-light">React JS</span>
-                </div>
-                <h5 class="card-title">Aplikasi Kontak</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi Kontak menggunakan React JS. Mengonsumsi data
-                  menggunakan data JSON. Aplikasi ini dapat menambah dan
-                  menghapus kontak, serta dilengkapi dengan gambar.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/6.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-light">React JS</span>
-                </div>
-                <h5 class="card-title">Aplikasi Catatan</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi Catatan menggunakan React JS. Mengonsumsi data
-                  menggunakan data JSON. Aplikasi ini dapat menambah dan
-                  menghapus catatan, Memindahkan catatan (arsip), serta
-                  dilengkapi dengan gambar maupun custom alert seperti sweet
-                  alert.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/7.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-success text-light">Node JS</span>
-                </div>
-                <h5 class="card-title">Admin Staycation (Back End + API)</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi Catatan menggunakan React JS. Mengonsumsi data
-                  menggunakan data JSON. Aplikasi ini dapat menambah dan
-                  menghapus catatan, Memindahkan catatan (arsip), serta
-                  dilengkapi dengan gambar maupun custom alert seperti sweet
-                  alert.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/8.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-warning text-dark">Javascript</span>
-                </div>
-                <h5 class="card-title">Game Suwit Jawa</h5>
-                <p class="card-text small text-muted">
-                  Game Suwit Jawa ini menggunakan bahasa pemrograman Javascript
-                  murni. Game ini sudah dilengkapi dengan alert ketika kalah
-                  seri maupun menang. Fitur ini dilengkapi dengan mode gelap
-                  maupun terang.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/9.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-success text-light">Node Js</span>
-                </div>
-                <h5 class="card-title">Admin Kontak (Back End</h5>
-                <p class="card-text small text-muted">
-                  Admin Kontak ini dibuat menggunakan Node JS. Aplikasi ini
-                  dibuat dengan sistem CRUD. Aplikasi ini digunakan untuk
-                  menampung data kontak.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/10.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-light">React JS</span>
-                </div>
-                <h5 class="card-title">Aplikasi Catatan Sederhana</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi ini dibuat menggunakan React JS. Aplikasi ini
-                  dilengkapi dengan JWT Authentication untuk login. Dimana JWT
-                  (JSON Web Token) ini nantinya setiap kali data ingin dirender
-                  maka token akan selalu direfresh. Aplikasi ini mengonsumsi
-                  RESTFUL API dari Back End Notes-Application.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/12.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-light">React JS</span>
-                </div>
-                <h5 class="card-title">Aplikasi Staycation</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi ini dibuat menggunakan React JS. Aplikasi ini
-                  digunakan untuk melakukan booking penginapan. Data ini
-                  dikonsumsi menggunakan RESTFUL API Back End Staycation.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/11.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-info text-light">React JS</span>
-                </div>
-                <h5 class="card-title">Aplikasi Aktivitas Harian</h5>
-                <p class="card-text small text-muted">
-                  Aplikasi ini dibuat menggunakan React JS. Aplikasi ini
-                  digunakan untuk mencatat aktivitas harian. Aplikasi ini dibuat
-                  dengan MUI (Material UI Design).
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/13.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-danger text-light">Java</span>
-                </div>
-                <h5 class="card-title">
-                  Aplikasi Penjualan Sparepart Pada Bengkel Agung Motor Sukabumi
-                  Berbasis Java Desktop
-                </h5>
-                <p class="card-text small text-muted">
-                  Aplikasi ini dibuat menggunakan bahasa pemrograman Java.
-                  Aplikasi ini dibuat untuk mengelola dan menjual stok
-                  sparepart. Database yang digunakan adalah MYSQL.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm h-100">
-              <img
-                src="img/projects/14.png"
-                class="card-img-top"
-                alt="Club Finder"
-              />
-              <div class="card-body d-flex flex-column">
-                <div class="mb-2">
-                  <span class="badge bg-danger text-light">Java</span>
-                </div>
-                <h5 class="card-title">
-                  Sistem Informasi Stok Bahan Bangunan Genteng Pada Geary Putra
-                  Genteng Berbasis Desktop
-                </h5>
-                <p class="card-text small text-muted">
-                  Aplikasi Manufaktur ini dibuat menggunakan bahasa pemrograman
-                  Java. Aplikasi ini dibuat untuk mengelola, menjual, dan
-                  memproduksi genteng. Database yang digunakan adalah MYSQL.
-                </p>
-                <div class="mt-auto">
-                  <a href="#" class="btn btn-sm btn-outline-primary"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-dark">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-5" style="background-color: #e2edff">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2 class="fw-bold">Contact Me</h2>
-            <div
-              class="mx-auto"
-              style="
-                width: 60px;
-                height: 5px;
-                background-color: #0d6efd;
-                border-radius: 10px;
-              "
-            ></div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card border-0 shadow-lg" style="border-radius: 20px">
-              <div class="card-body p-4 p-md-5">
-                <form>
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label for="name" class="form-label fw-bold"
-                        >Nama Lengkap</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control bg-light border-0 p-3"
-                        id="name"
-                        placeholder="Masukkan nama Anda"
-                        required
-                      />
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="email" class="form-label fw-bold"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control bg-light border-0 p-3"
-                        id="email"
-                        placeholder="nama@example.com"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="mb-4">
-                    <label for="pesan" class="form-label fw-bold">Pesan</label>
-                    <textarea
-                      class="form-control bg-light border-0 p-3"
-                      id="pesan"
-                      rows="5"
-                      placeholder="Tuliskan pesan Anda di sini..."
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div class="text-end">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm transition-all"
-                    >
-                      Kirim Pesan <i class="bi bi-send-fill ms-2"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-primary text-white text-center pb-5">
-      <div class="container">
-        <div class="row pt-5 mb-3">
-          <div class="col">
-            <div class="mb-4">
-              <a
-                href="https://www.instagram.com/rafki.de/"
-                class="text-white fs-2 mx-3 transition-icon"
-              >
-                <i class="bi bi-instagram"></i>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-primary-custom">
+                Lihat Project
+                <i class="bi bi-arrow-right ms-2"></i>
               </a>
+
+              <a href="#contact" class="btn btn-outline-custom">
+                Hubungi Saya
+              </a>
+            </div>
+
+            <div class="hero-social mt-4">
               <a
                 href="https://github.com/rafkidesramadhan"
-                class="text-white fs-2 mx-3 transition-icon"
+                target="_blank"
+                aria-label="GitHub"
               >
                 <i class="bi bi-github"></i>
               </a>
+
               <a
                 href="https://linkedin.com/in/rafkidesramadhan"
-                class="text-white fs-2 mx-3 transition-icon"
+                target="_blank"
+                aria-label="LinkedIn"
               >
                 <i class="bi bi-linkedin"></i>
               </a>
+
+              <a
+                href="https://www.instagram.com/rafki.de/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="col-lg-5 order-1 order-lg-2 text-center mb-5 mb-lg-0">
+            <div class="profile-wrapper">
+              <div class="profile-ring"></div>
+
+              <img
+                src="img/profile.png"
+                alt="Rafki Desramadhan"
+                class="profile-img"
+              />
+
+              <div class="floating-card floating-card-one">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+              </div>
+
+              <div class="floating-card floating-card-two">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p class="mb-0">
-              Created with
-              <i class="bi bi-heart-fill text-danger animate-beat"></i> by
-              <a
-                href="https://www.instagram.com/rafki.de/"
-                class="text-white fw-bold text-decoration-none border-bottom border-2"
-              >
-                Rafki Desramadhan
-              </a>
-            </p>
-            <p class="mt-2 small opacity-75">
-              &copy; 2026 Rafki Desramadhan. All Rights Reserved.
-            </p>
+      </div>
+
+      <div class="hero-bottom-wave">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 180"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,96L60,90.7C120,85,240,75,360,85.3C480,96,600,128,720,128C840,128,960,96,1080,80C1200,64,1320,64,1380,64L1440,64V180H0Z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- =========================
+         TECH STACK
+    ========================== -->
+    <section id="tech-stack" class="section-padding skills-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label"> MY STACK </span>
+
+          <h2>Tools & Technologies</h2>
+
+          <p>Teknologi yang biasa saya gunakan untuk membangun aplikasi.</p>
+        </div>
+
+        <div class="row justify-content-center g-3 mt-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
           </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="tech-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-label"> ABOUT ME </span>
+
+            <h2 class="about-title">
+              Mengubah ide menjadi
+              <span>solusi digital.</span>
+            </h2>
+
+            <p class="about-text">
+              Halo! Saya
+              <strong>Rafki Desramadhan</strong>, lulusan Universitas
+              Indraprasta PGRI Jakarta yang memiliki ketertarikan besar terhadap
+              dunia pengembangan web.
+            </p>
+
+            <p class="about-text">
+              Fokus utama saya adalah membangun aplikasi web yang responsif,
+              efisien, dan mudah digunakan. Saya percaya bahwa kode yang bersih
+              dan desain yang intuitif adalah fondasi dari pengalaman pengguna
+              yang baik.
+            </p>
+
+            <div class="about-highlight">
+              <div class="highlight-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <div>
+                <strong>Clean Code</strong>
+                <p>
+                  Menulis kode yang terstruktur, mudah dipahami, dan mudah
+                  dikembangkan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-box">
+              <div class="skill-group">
+                <h5>
+                  <i class="bi bi-code-square"></i>
+                  Technical Skills
+                </h5>
+
+                <div class="skill-tags">
+                  <span>JavaScript</span>
+                  <span>Java</span>
+                  <span>MySQL</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h5>
+                  <i class="bi bi-layers"></i>
+                  Frameworks
+                </h5>
+
+                <div class="skill-tags">
+                  <span>React JS</span>
+                  <span>Node JS</span>
+                  <span>Express JS</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h5>
+                  <i class="bi bi-palette"></i>
+                  Design & Tools
+                </h5>
+
+                <div class="skill-tags">
+                  <span>Figma</span>
+                  <span>Microsoft Office</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section id="projects" class="section-padding projects-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label"> PORTFOLIO </span>
+
+          <h2>Featured Projects</h2>
+
+          <p>
+            Beberapa project yang pernah saya kerjakan menggunakan berbagai
+            teknologi.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- PROJECT 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/1.png" alt="Web Statis ILKOOM" />
+
+                <div class="project-overlay">
+                  <a href="#" aria-label="Live Demo">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> Bootstrap </span>
+
+                <h3>Web Statis ILKOOM</h3>
+
+                <p>
+                  Website statis berisi artikel dan beberapa konten yang dibuat
+                  menggunakan Bootstrap.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/2.png" alt="Bookshelf Apps" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category javascript"> JavaScript </span>
+
+                <h3>Bookshelf Apps</h3>
+
+                <p>
+                  Aplikasi pengelolaan buku menggunakan Vanilla JavaScript
+                  dengan Local Storage dan Session Storage.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/3.png" alt="Club Finder" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category javascript"> JavaScript </span>
+
+                <h3>Club Finder</h3>
+
+                <p>
+                  Website pencarian club sepak bola internasional menggunakan
+                  REST API.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/4.png" alt="Makmur Barbershop" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category"> HTML / CSS </span>
+
+                <h3>Makmur Barbershop</h3>
+
+                <p>
+                  Website statis dengan artikel, foto, video, dan audio
+                  menggunakan HTML dan CSS.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/5.png" alt="Aplikasi Kontak" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category react"> React JS </span>
+
+                <h3>Aplikasi Kontak</h3>
+
+                <p>
+                  Aplikasi kontak menggunakan React JS dengan fitur menambah dan
+                  menghapus kontak.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/6.png" alt="Aplikasi Catatan" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category react"> React JS </span>
+
+                <h3>Aplikasi Catatan</h3>
+
+                <p>
+                  Aplikasi catatan dengan fitur arsip, hapus, gambar, dan custom
+                  alert.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/7.png" alt="Admin Staycation" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category node"> Node JS </span>
+
+                <h3>Admin Staycation</h3>
+
+                <p>
+                  Backend dan REST API untuk aplikasi Staycation menggunakan
+                  Node JS.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 8 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/8.png" alt="Game Suwit Jawa" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category javascript"> JavaScript </span>
+
+                <h3>Game Suwit Jawa</h3>
+
+                <p>
+                  Game menggunakan Vanilla JavaScript dengan mode terang dan
+                  gelap.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 9 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/9.png" alt="Admin Kontak" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category node"> Node JS </span>
+
+                <h3>Admin Kontak</h3>
+
+                <p>
+                  Aplikasi backend untuk mengelola data kontak menggunakan
+                  sistem CRUD.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 10 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/projects/10.png"
+                  alt="Aplikasi Catatan Sederhana"
+                />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category react"> React JS </span>
+
+                <h3>Aplikasi Catatan Sederhana</h3>
+
+                <p>React application dengan JWT Authentication dan REST API.</p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 11 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/projects/12.png" alt="Aplikasi Staycation" />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category react"> React JS </span>
+
+                <h3>Aplikasi Staycation</h3>
+
+                <p>
+                  Aplikasi booking penginapan yang mengonsumsi REST API backend.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 12 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/projects/11.png"
+                  alt="Aplikasi Aktivitas Harian"
+                />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category react"> React JS </span>
+
+                <h3>Aplikasi Aktivitas Harian</h3>
+
+                <p>
+                  Aplikasi pencatatan aktivitas harian menggunakan React JS dan
+                  MUI.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Live Demo
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 13 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/projects/13.png"
+                  alt="Aplikasi Penjualan Sparepart"
+                />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category java"> Java </span>
+
+                <h3>Aplikasi Penjualan Sparepart</h3>
+
+                <p>
+                  Aplikasi desktop untuk mengelola stok dan penjualan sparepart.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Detail
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 14 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/projects/14.png"
+                  alt="Sistem Informasi Stok Bahan Bangunan"
+                />
+
+                <div class="project-overlay">
+                  <a href="#">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <span class="project-category java"> Java </span>
+
+                <h3>Sistem Informasi Stok Genteng</h3>
+
+                <p>
+                  Sistem desktop untuk mengelola, menjual, dan memproduksi
+                  genteng menggunakan MySQL.
+                </p>
+
+                <div class="project-footer">
+                  <a href="#">
+                    Detail
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-label"> CONTACT </span>
+
+            <h2 class="contact-title">
+              Punya project
+              <span>menarik?</span>
+            </h2>
+
+            <p class="contact-description">
+              Jangan ragu untuk menghubungi saya. Mari berdiskusi dan membangun
+              sesuatu yang keren bersama.
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+
+                <div>
+                  <small>Email</small>
+                  <p>Rafki Desramadhan</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-github"></i>
+                </div>
+
+                <div>
+                  <small>GitHub</small>
+                  <p>github.com/rafkidesramadhan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-card">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label"> Nama Lengkap </label>
+
+                    <input
+                      type="text"
+                      class="form-control custom-input"
+                      id="name"
+                      placeholder="Nama kamu"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label"> Email </label>
+
+                    <input
+                      type="email"
+                      class="form-control custom-input"
+                      id="email"
+                      placeholder="nama@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="pesan" class="form-label"> Pesan </label>
+
+                  <textarea
+                    class="form-control custom-input"
+                    id="pesan"
+                    rows="6"
+                    placeholder="Ceritakan project atau kebutuhan kamu..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary-custom w-100">
+                  Kirim Pesan
+                  <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <a href="#home" class="footer-brand"> Rafki<span>.</span> </a>
+
+            <p>Full Stack Web Developer</p>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/rafki.de/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a
+              href="https://github.com/rafkidesramadhan"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/rafkidesramadhan"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 Rafki Desramadhan. All Rights Reserved.</p>
+
+          <p>
+            Made with
+            <i class="bi bi-heart-fill text-danger"></i>
+            & code.
+          </p>
         </div>
       </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
